@@ -1,3 +1,5 @@
+Forked from ahes because my username starts with # and ConfigObj ignores it...
+
 # Keepalived Hetzner API
 
 Keepalived failover script for Hetzner API

@@ -61,7 +61,7 @@ def request(failover_address):
     while retry < RETRY_TIMES:
         params = { 'active_server_ip': c['server_address'] }
         headers = { 'content-type': 'application/json' }
-        auth = (c['api_user'], c['api_password'])
+        auth = ('#' + c['api_user'], c['api_password'])
         url = c['api_url'] + '/failover/' + failover_address
         failover_requested = False
         try:
